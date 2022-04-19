@@ -15,7 +15,7 @@ export default function contact() {
   return (
     <div className='h-fit'>
        <Navbar navLinks={navLinks}/>
-        <section className='w-3/4 md:w-1/4 m-auto rounded-2xl h-fit my-16 shadow-lg shadow-white p-10 bg-slate-50'>
+        <section className='w-3/4 md:w-2/4 lg:w-2/6 m-auto rounded-2xl h-fit my-16 shadow-lg shadow-white p-10 bg-slate-50'>
             <div>
                 <div className='flex flex-row items-baseline justify-between mb-7 text-black rounded-lg'>
                    <h1 className='text-2xl'>Contact</h1> 
