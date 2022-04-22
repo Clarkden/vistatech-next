@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from './components/navbar'
@@ -6,34 +8,44 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightLong, faDisplay, faCode, faServer } from '@fortawesome/free-solid-svg-icons'
 import Script from 'next/script'
 import React from 'react'
+//import dynamic from 'next/dynamic'
 
 
 export default function Home() {
 
+  // const DynamicComponentWithNoSSR = dynamic(
+  //   () => import('package'),
+  //   { ssr: false }
+  // )
+
   const navLinks = [
     {
       link: '#aboutUs',
-      title: 'About'
+      title: 'About',
+      key: 1
     },
     {
       link: '#services',
-      title: 'Services'
+      title: 'Services',
+      key: 2
     },
     {
       link: '/projects',
-      title: 'Projects'
+      title: 'Projects',
+      key: 3
     },
     {
       link: '/contact',
-      title: 'Contact'
+      title: 'Contact',
+      key: 4
     }
   ]
 
   return (
     <div className='min h-auto text-black'>
+      {/* <DynamicComponentWithNoSSR /> */}
       <Head>
         <title>Vista Tech</title>
-        <script type="text/javascript" src="/js/fadein-scroll.js"></script>
       </Head>
       <Navbar navLinks={navLinks}/>
       <div className='w-4/5 m-auto pt-5'>

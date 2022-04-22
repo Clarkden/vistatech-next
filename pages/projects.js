@@ -22,7 +22,7 @@ export default function Home() {
                     <div className='bg-white h-fit w-full rounded-lg p-5 text-black'>
                         <h1 className='text-2xl mt-3 mb-5'>Music Shop</h1>
                         <div className='flex flex-col'>
-                            <div className="flex flex-row flex-wrap md:flex-nowrap justify-center md:justify-start">
+                            <div className="flex flex-row flex-wrap md:flex-nowrap justify-center md:justify-start mb-2">
                                 <img src="/music-store-1.png" className='rounded-lg w-3/4 md:w-1/2 md:h-2/6'></img>
                                 <div className='flex flex-col items-center flex-wrap h-full justify-end w-3/4 mt-10 mb-4 md:mt-0 md:mb-0'>
                                     <div className=" md:w-3/4">
