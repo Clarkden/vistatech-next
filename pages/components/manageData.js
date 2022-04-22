@@ -59,3 +59,11 @@
 //         </div>
 //     )
 // }
+
+import React from 'react'
+
+export default function manageData() {
+  return (
+    <div>manageData</div>
+  )
+}
