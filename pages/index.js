@@ -49,7 +49,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://vistatech.org" />
         <meta property="og:image" content="/logo.png" />
-        <meta property="og:description" content="Let us help you create dynamic and responsive web apps" />
+        <meta property="og:description" content="Creating and designing dynamic and responsive web apps built just right tailored to your specific needs" />
         <meta name="theme-color" content="#ffa07a"/>
           {/* <link rel="shortcut icon" href="/vista-favicon.ico"></link> */}
       </Head>
