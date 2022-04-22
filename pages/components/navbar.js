@@ -12,7 +12,7 @@ export default function navbar({navLinks}) {
   const[ShowModalNav, setShowModalNav] = useState(false)
 
   return (
-    <nav className='bg-neutral-900 h-auto items-center sm:h-auto flex justify-center mt-4 mb-1 sm:mt5 sm:mb-2 md:mt-6 md:mb-3 lg:mt-6 lg:mb-4 w-4/5 m-auto rounded-2xl shadow-lg shadow-zinc-800 '>
+    <nav className='bg-neutral-900 h-auto items-center sm:h-auto flex justify-center mt-4 mb-1 sm:mt5 sm:mb-2 md:mt-6 md:mb-3 lg:mt-6 lg:mb-4 w-11/12 md:w-4/5  m-auto rounded-2xl shadow-lg shadow-zinc-800 '>
       <div className='flex w-4/5 h-16 justify-between items-center'>
         <div className=''>
           <a href='/'><img src='/logo.png' className='h-10 sm:h-12' /></a>
@@ -30,7 +30,7 @@ export default function navbar({navLinks}) {
           </ul>
         </div>
         <div className=' w-4/5 flex sm:flex md:flex lg:hidden justify-end'>
-          <FontAwesomeIcon icon={faBars} className='text-gray-200 text-2xl h-4 sm:h-6 cursor-pointer' onClick={() => setShowModalNav(!ShowModalNav)}/>
+          <FontAwesomeIcon icon={faBars} className='text-gray-200 text-base md:text-2xl h-4 sm:h-6 cursor-pointer' onClick={() => setShowModalNav(!ShowModalNav)}/>
         </div>
       </div>
       {ShowModalNav ? 
