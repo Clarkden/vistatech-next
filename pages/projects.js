@@ -2,6 +2,7 @@
 
 import Navbar from './components/navbar'
 import Footer from './components/footer'
+import Head from 'next/head'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons'
 
@@ -18,6 +19,9 @@ export default function Home() {
     return (
 
         <div>
+            <Head>
+                <title>Projects</title>
+            </Head>
             <Navbar navLinks={navLinks} />
             <section className='min h-fit text-gray-100'>
                 <div className='w-4/5 m-auto pt-5 shadow-red-200 shadow-xl'>

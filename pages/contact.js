@@ -4,6 +4,7 @@ import Navbar from './components/navbar'
 import Footer from './components/footer'
 import {faPhone} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Head from 'next/head'
 
 export default function contact() {
     const navLinks = [{
@@ -15,6 +16,9 @@ export default function contact() {
 
   return (
     <div className='h-fit'>
+        <Head>
+            <title>Contact</title>
+        </Head>
        <Navbar navLinks={navLinks}/>
         <section className='w-3/4 md:w-2/4 lg:w-2/6 m-auto rounded-2xl h-fit my-16 shadow-lg shadow-white p-10 bg-slate-50'>
             <div>
