@@ -45,9 +45,15 @@ export default function Home() {
     <div className='min h-auto text-black'>
       <Head>
         <title>Vista Tech</title>
-        {/* <link rel="shortcut icon" href="/vista-favicon.ico"></link> */}
+        <meta property="og:title" content="Vista Tech" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://vistatech.org" />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:description" content="Let us help you create dynamic and responsive web apps" />
+        <meta name="theme-color" content="#ffa07a"/>
+          {/* <link rel="shortcut icon" href="/vista-favicon.ico"></link> */}
       </Head>
-      <Navbar navLinks={navLinks}/>
+      <Navbar navLinks={navLinks} />
       <div className='w-4/5 m-auto pt-5'>
         <div className='w-full h-auto m-auto flex flex-wrap rounded-md my-1 py-1 sm:my-4 sm:py-4 md:my-20 md:py-6   px-4 md:grid md:grid-cols-2 md:gap-20 justify-center'>
           <div>
@@ -58,7 +64,7 @@ export default function Home() {
             <div className='mt-10 hover:translate-x-2 transition delay-50 duration-200'>
               <a href='/projects' className=' text-xl invisible md:visible'>
                 View Projects
-                <FontAwesomeIcon icon={faArrowRightLong} className='inline-block ml-3' size=''/>
+                <FontAwesomeIcon icon={faArrowRightLong} className='inline-block ml-3' size='' />
               </a>
             </div>
           </div>
@@ -67,9 +73,9 @@ export default function Home() {
             <img src="/desk-img.png"></img>
           </div>
           <a href='/projects' className=' text-xl visible md:invisible mt-10 hover:translate-x-2 transition delay-50 duration-200'>
-                View Projects
-                <FontAwesomeIcon icon={faArrowRightLong} className='inline-block ml-3' />
-              </a>
+            View Projects
+            <FontAwesomeIcon icon={faArrowRightLong} className='inline-block ml-3' />
+          </a>
         </div>
 
       </div>
