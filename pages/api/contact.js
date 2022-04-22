@@ -22,7 +22,12 @@ export default async function handler(req, res) {
     case 'POST':
       try {
         const requests = await Request.create(req.body)
-        res.redirect('/contact')
+        //res.render('/contact')
+        res.writeHead(302, {
+          'Location': '/contact'
+          //add other headers here...
+        });
+        res.end()
       } catch (error) {
         res.status(400).json({ success: false, error: error})
       }
