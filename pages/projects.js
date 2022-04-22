@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import Navbar from './components/navbar'
 import Footer from './components/footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
