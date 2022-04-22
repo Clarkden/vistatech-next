@@ -8,6 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightLong, faDisplay, faCode, faServer } from '@fortawesome/free-solid-svg-icons'
 import Script from 'next/script'
 import React from 'react'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import {config} from '@fortawesome/fontawesome-svg-core'
+config.autoAddCss = false
 //import dynamic from 'next/dynamic'
 
 
@@ -51,7 +54,7 @@ export default function Home() {
         <meta property="og:image" content="/logo.png" />
         <meta property="og:description" content="Creating and designing dynamic and responsive web apps built just right tailored to your specific needs" />
         <meta name="theme-color" content="#ffa07a"/>
-          {/* <link rel="shortcut icon" href="/vista-favicon.ico"></link> */}
+        <link rel="shortcut icon" href="/vista-favicon.ico"></link>
       </Head>
       <Navbar navLinks={navLinks} />
       <div className='w-4/5 m-auto pt-5'>
@@ -64,7 +67,7 @@ export default function Home() {
             <div className='mt-10 hover:translate-x-2 transition delay-50 duration-200'>
               <a href='/projects' className=' text-xl invisible md:visible'>
                 View Projects
-                <FontAwesomeIcon icon={faArrowRightLong} className='inline-block ml-3' size='' />
+                <FontAwesomeIcon icon={faArrowRightLong} className='inline-block ml-3' size='lg' fixedWidth />
               </a>
             </div>
           </div>
