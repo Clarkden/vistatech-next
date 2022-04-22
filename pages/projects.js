@@ -21,6 +21,13 @@ export default function Home() {
         <div>
             <Head>
                 <title>Projects</title>
+                <meta property="og:title" content="Projects" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="http://vistatech.org/projects" />
+                <meta property="og:image" content="/logo.png" />
+                <meta property="og:description" content="View our gallery of projects we have worked on and others that are currently under development" />
+                <meta name="theme-color" content="#ffa07a" />
+                {/* <link rel="shortcut icon" href="/vista-favicon.ico"></link> */}
             </Head>
             <Navbar navLinks={navLinks} />
             <section className='min h-fit text-gray-100'>
