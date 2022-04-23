@@ -35,3 +35,30 @@ a {
 .animate-fadeIn {
   animation: fadeIn 1s ease-in;
 }
+
+
+.fade{
+  width:200px;
+  height: 200px;
+  background: red;
+  opacity:0;
+}
+
+.fading-in {
+  animation: modalIn 0.5s linear forwards;
+}
+
+.fading-out{
+  animation: modalOut 0.5s linear forwards;
+}
+
+@keyframes modalIn {
+0% { opacity:0; }
+100% { opacity:1; } 
+}
+
+
+@keyframes modalOut{
+  100% { opacity:0; } 
+  0% { opacity:1; }
+}

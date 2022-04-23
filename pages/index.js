@@ -84,7 +84,7 @@ export default function Home() {
       </div>
       <section id="services" className='w-4/5 mx-auto mt-52 md:mt-0'>
         <h1 className="md:text-left leading-snug font-bold lg:text-5xl md:text-3xl text-2xl text-center mt-12 js-show-on-scroll" >What do we do?</h1>
-        <div className='flex flex-wrap my-10 md:my-20 md:justify-center justify-center'>
+        <div className='flex flex-wrap my-10 md:my-20 justify-center lg:justify-between'>
           <div className='border-2 border-black rounded-2xl w-min md:w-3/12 h-60 md:h-80 js-show-on-scroll p-5 flex flex-col justify-between shadow-white shadow-xl min-w-[300px] items-start my-5 mx-2'>
             <FontAwesomeIcon icon={faCode} className='text-2xl md:text-4xl' />
             <h1 className='text-xl md:text-2xl text-black'>API</h1>
