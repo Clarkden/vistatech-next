@@ -87,9 +87,9 @@ export default function Home() {
 
       </div>
       {/* mt-52  */}
-      <div className='w-full flex flex-col items-center animate-bounce mt-40 md:mt-30 lg:mt-36'>
-        <FontAwesomeIcon icon={faArrowUp} size="xl" className='text-white' />
-        <h1 className='text-white text-xl'>Scroll</h1>
+      <div className='w-full flex flex-col items-center animate-bounce mt-40 md:mt-30 lg:mt-36 text-white/50'>
+        <FontAwesomeIcon icon={faArrowUp} size="xl" className='' />
+        <h1 className='text-xl'>Scroll</h1>
       </div>
 
       <section id="services" className='w-4/5 mx-auto mt-32 mb-48'>
