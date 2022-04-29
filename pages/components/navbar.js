@@ -14,7 +14,7 @@ config.autoAddCss = false
 export default function navbar({navLinks}) {
   return (
 
-    <nav className='bg-neutral-900 h-auto items-center sm:h-auto flex justify-center mt-4 mb-1 sm:mt5 sm:mb-2 md:mt-6 md:mb-3 lg:mt-6 lg:mb-4 w-11/12 md:w-4/5  m-auto rounded-2xl shadow-lg shadow-zinc-800 '>
+    <nav className='bg-neutral-900 h-auto items-center sm:h-auto flex justify-center mt-4 mb-1 sm:mt5 sm:mb-2 md:mt-6 md:mb-3 lg:mt-6 lg:mb-4 w-11/12 md:w-4/5  m-auto rounded-2xl shadow-lg shadow-white/50 '>
       <Head>
       <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossOrigin="anonymous"></script>
         <script src="js/modal-fade.js" type="text/javascript"></script>

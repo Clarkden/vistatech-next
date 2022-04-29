@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       colors: {
         "lightsalmon": "#ffa07a",
-        "orange-yellow": "linear-gradient( 135deg, #FFF6B7 10%, #F6416C 100%)"
+        "orange-yellow": "linear-gradient( 135deg, #FFF6B7 10%, #F6416C 100%)",
+        "transparent-white": "rgba(103, 128, 159, 50)"
       },
     },
   },
