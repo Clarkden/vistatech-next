@@ -58,7 +58,7 @@ export default function Home() {
       </Head>
       <Navbar navLinks={navLinks} />
       <div className='w-4/5 m-auto pt-5'>
-        <div className='w-full h-fit m-auto flex flex-column flex-wrap-reverse  justify-center rounded-xl bg-white/50 text-white shadow-lg items-center p-10  lg:mt-16 lg:mb-28 drop-shadow-xl mt-20 md:mt-10'>
+        <div className='w-full flex flex-column flex-wrap-reverse  justify-center rounded-xl bg-white/50 text-white shadow-lg items-center p-10  lg:mt-16 lg:mb-28 drop-shadow-xl mt-20 md:mt-10'>
           <div className='w-full md:w-2/3 flex flex-col items-center md:block'>
             <h1 className='hidden md:block md:text-left leading-tight font-bold text-xl lg:text-5xl md:text-4xl sm:text-3xl text-center text-black'>
               Dynamic Websites<br></br>Crafted By Hand<span className='invisble md:visible'><br></br></span>Designed With<br></br>Expertise</h1>
