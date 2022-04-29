@@ -65,7 +65,7 @@ export default function Home() {
             <h1 className='block md:hidden w-4/5 mx-auto md:text-left leading-tight font-bold text-xl lg:text-5xl md:text-4xl sm:text-3xl text-center text-black'>
               Dynamic Websites Crafted By Hand Designed With Expertise</h1>
             <a href="/projects">
-              <div className='mt-10 hover:shadow-white hover:shadow-lg hover:cursor-pointer transition delay-50 duration-20 bg-lightsalmon p-2 w-full md:w-1/2 rounded-lg flex'>
+              <div className='mt-10 hover:shadow-white hover:shadow-lg hover:cursor-pointer transition delay-50 duration-20 bg-lightsalmon p-2 w-full px-10 md:px-0 md:w-1/2 rounded-lg flex'>
                 <text className=' text-base md:text-xl text-black/75 mx-auto'>
                   View Projects
                   <FontAwesomeIcon icon={faArrowRightLong} className='inline-block ml-3' size='lg' fixedWidth />
