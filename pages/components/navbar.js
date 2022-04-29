@@ -34,7 +34,7 @@ export default function navbar({navLinks}) {
           <FontAwesomeIcon id="hamurger" icon={faBars} className='text-gray-200 text-base md:text-2xl h-4 sm:h-6 cursor-pointer' onClick={() => showModal()}/>
         </div>
       </div>
-      <div id="modal" className='fixed w-full h-screen top-0 left-0 backdrop-blur-sm hidden fading-in' onClick={() => hideModal()} >
+      <div id="modal" className='fixed z-10 w-full h-screen top-0 left-0 backdrop-blur-sm hidden fading-in' onClick={() => hideModal()} >
         <div className='bg-neutral-900 h-auto w-4/5 rounded-2xl mx-auto mt-36'>
         <FontAwesomeIcon id="modal-x" icon={faX} className="text-red-500 mt-4 ml-4 cursor-pointer" onClick={() => hideModal()}/>
         <ul className='text-gray-400 pb-5 text-center'>
