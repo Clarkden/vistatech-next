@@ -124,39 +124,39 @@ export default function Home() {
       <section id="technologies" className=' w-4/5 mx-auto mt-32 mb-48 '>
         <h1 className="md:text-left leading-snug font-bold text-2xl lg:text-5xl md:text-3xl text-center mt-6   md:mt-12 mb-20 md:mb-10 js-show-on-scroll" >Technolgoies we use</h1>
         <div className='gap-10 flex flex-column flex-wrap justify-center js-show-on-scroll'>
-          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72    md:my-10 p-5 flex flex-row items-center justify-center shadow-white shadow-lg'>
+          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72    md:my-10 p-5 flex flex-row items-center justify-center shadow-white hover:shadow-2xl hover:shadow-white shadow-lg transition'>
             <img src='/react-brands.svg' alt='mySvgImage' width="32px md:48px" height="32px md:48px" />
             <h1 className='text-2xl md:text-3xl  ml-5'>React</h1>
           </div>
-          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72    md:my-10 p-5 flex flex-row items-center justify-center shadow-white shadow-lg'>
+          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72    md:my-10 p-5 flex flex-row items-center justify-center shadow-white hover:shadow-2xl hover:shadow-white shadow-lg transition'>
             <img src='/node-js-brands.svg' alt='mySvgImage' width="32px md:48px" height="32px md:48px" />
             <h1 className='text-2xl md:text-3xl ml-5'>Node Js</h1>
           </div>
-          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72   md:my-10 p-5 flex flex-row items-center justify-center shadow-white shadow-lg'>
+          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72    md:my-10 p-5 flex flex-row items-center justify-center shadow-white hover:shadow-2xl hover:shadow-white shadow-lg transition'>
             <img src='/python-brands.svg' alt='mySvgImage' width="32px md:48px" height="32px md:48px" />
             <h1 className='text-2xl md:text-3xl ml-5'>Python</h1>
           </div>
-          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72    md:my-10 p-5 flex flex-row items-center justify-center shadow-white shadow-lg'>
+          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72    md:my-10 p-5 flex flex-row items-center justify-center shadow-white hover:shadow-2xl hover:shadow-white shadow-lg transition'>
             <img src='/js-brands.svg' alt='mySvgImage' width="32px md:48px" height="32px md:48px" />
             <h1 className='text-2xl md:text-3xl ml-5'>Javascript</h1>
           </div>
-          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72    md:my-10 p-5 flex flex-row items-center justify-center shadow-white shadow-lg'>
+          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72    md:my-10 p-5 flex flex-row items-center justify-center shadow-white hover:shadow-2xl hover:shadow-white shadow-lg transition'>
             <img src='/figma-brands.svg' alt='mySvgImage' width="32px md:48px" height="32px md:48px" />
             <h1 className='text-2xl md:text-3xl ml-5'>Figma</h1>
           </div>
-          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72   md:my-10 p-5 flex flex-row items-center justify-center shadow-white shadow-lg'>
+          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72    md:my-10 p-5 flex flex-row items-center justify-center shadow-white hover:shadow-2xl hover:shadow-white shadow-lg transition'>
             <img src='/cloud-solid.svg' alt='mySvgImage' width="32px md:48px" height="32px md:48px" />
             <h1 className='text-2xl md:text-3xl ml-5'>Gcloud</h1>
           </div>
-          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72    md:my-10 p-5 flex flex-row items-center justify-center shadow-white shadow-lg'>
+          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72    md:my-10 p-5 flex flex-row items-center justify-center shadow-white hover:shadow-2xl hover:shadow-white shadow-lg transition'>
             <img src='/aws-brands.svg' alt='mySvgImage' width="32px md:48px" height="32px md:48px" />
             <h1 className='text-2xl md:text-3xl ml-5'>AWS</h1>
           </div>
-          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72  md:my-10 p-5 flex flex-row items-center justify-center shadow-white shadow-lg'>
+          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72    md:my-10 p-5 flex flex-row items-center justify-center shadow-white hover:shadow-2xl hover:shadow-white shadow-lg transition'>
             <img src='/vuejs-brands.svg' alt='mySvgImage' width="32px md:48px" height="32px md:48px" />
             <h1 className='text-2xl md:text-3xl ml-5'>Vue</h1>
           </div>
-          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72    md:my-10 p-5 flex flex-row items-center justify-center shadow-white shadow-lg'>
+          <div className='border-2 border-white rounded-2xl w-4/5 md:h-28 md:w-72    md:my-10 p-5 flex flex-row items-center justify-center shadow-white hover:shadow-2xl hover:shadow-white shadow-lg transition'>
             <img src='/cloudflare-brands.svg' alt='mySvgImage' width="32px md:48px" height="32px md:48px" />
             <h1 className='text-2xl md:text-3xl ml-5'>Cloud Flare</h1>
           </div>
