@@ -62,14 +62,17 @@ export default function Home() {
           <div className='w-full md:w-2/3 flex flex-col items-center md:block'>
             <h1 className='hidden md:block md:text-left leading-tight font-bold text-xl lg:text-5xl md:text-4xl sm:text-3xl text-center text-black'>
               Dynamic Websites<br></br>Crafted By Hand<span className='invisble md:visible'><br></br></span>Designed With<br></br>Expertise</h1>
-              <h1 className='block md:hidden w-4/5 mx-auto md:text-left leading-tight font-bold text-xl lg:text-5xl md:text-4xl sm:text-3xl text-center text-black'>
+            <h1 className='block md:hidden w-4/5 mx-auto md:text-left leading-tight font-bold text-xl lg:text-5xl md:text-4xl sm:text-3xl text-center text-black'>
               Dynamic Websites Crafted By Hand Designed With Expertise</h1>
-            <div className='mt-10 hover:shadow-white hover:shadow-lg hover:cursor-pointer transition delay-50 duration-20 bg-lightsalmon p-2 w-1/2 rounded-lg flex'>
-              <a href='/projects' className=' text-base md:text-xl text-black/75 mx-auto'>
-                View Projects
-                <FontAwesomeIcon icon={faArrowRightLong} className='inline-block ml-3' size='lg' fixedWidth />
-              </a>
-            </div>
+            <a href="/projects">
+              <div className='mt-10 hover:shadow-white hover:shadow-lg hover:cursor-pointer transition delay-50 duration-20 bg-lightsalmon p-2 w-full md:w-1/2 rounded-lg flex'>
+                <text className=' text-base md:text-xl text-black/75 mx-auto'>
+                  View Projects
+                  <FontAwesomeIcon icon={faArrowRightLong} className='inline-block ml-3' size='lg' fixedWidth />
+                </text>
+              </div>
+            </a>
+
           </div>
           <div className='w-4/5 mb-10 md:w-1/3 md:mb-0'>
             <img src="/desk-img.png" className=" md:w-80"></img>
