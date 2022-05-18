@@ -18,11 +18,9 @@ export default function contact() {
 
     function submit() { }
 
-    const [responseStatus, setResponseStatus] = useState()
 
     const router = useRouter()
-    if (router.query)
-        setResponseStatus(router.query.status)
+    const { status } = router.query
 
     return (
         <div className='h-fit'>
@@ -43,7 +41,7 @@ export default function contact() {
                         <h1 className='text-2xl'>Contact</h1>
                         <FontAwesomeIcon icon={faPhone} />
                     </div>
-                    {responseStatus ?
+                    {status ?
                         {
                             'success': <div className='w-5/6 h-16 border-2 border-green-400 bg-green-400/25 rounded-lg flex justify-center items-center mx-auto relative'><div className='absolute top-1 left-2 hover:cursor-pointer text-green-400' onClick={() => router.push('/contact')}><FontAwesomeIcon icon={faClose} size="lg" className='text-red' /></div><h1 className='text-slate-600 dark:text-slate-200 font-bold text-sm md:text-lg text-center' >Your response was successfully submitted</h1></div>,
                             'error': <div className='w-5/6 h-16 border-2 border-red-400 bg-red-400/25 rounded-lg flex justify-center items-center mx-auto relative'><div className='absolute top-1 left-2 hover:cursor-pointer text-red-400' onClick={() => router.push('/contact')}><FontAwesomeIcon icon={faClose} size="lg" className='text-red' /></div><h1 className='text-slate-600 dark:text-slate-200 font-bold text-sm md:text-lg text-center'>There was an error submitting you rrequest</h1></div>,
