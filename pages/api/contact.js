@@ -23,6 +23,7 @@ export default async function handler(req, res) {
       try {
         const requests = await Request.create(req.body)
         //res.render('/contact')
+        console.log('here')
         res.writeHead(302, {
           'Location': '/contact/?status=success'
           //add other headers here...
