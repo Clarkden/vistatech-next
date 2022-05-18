@@ -8,6 +8,7 @@ import Head from 'next/head'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import {config} from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false
+import { useRouter } from 'next/router'
 
 export default function contact() {
     const navLinks = [{
@@ -16,6 +17,9 @@ export default function contact() {
     }]
 
     function submit() { }
+
+    const router = useRouter()
+    const {status} = router.query.status
 
     return (
         <div className='h-fit'>
@@ -36,6 +40,13 @@ export default function contact() {
                         <h1 className='text-2xl'>Contact</h1>
                         <FontAwesomeIcon icon={faPhone} />
                     </div>
+                        {status ?
+          {
+            'success': <div className='w-5/6 h-16 border-2 border-green-400 bg-green-400/25 rounded-lg flex justify-center items-center mx-auto relative'><div className='absolute top-1 left-2 hover:cursor-pointer text-green-400' onClick={() => router.push('/contact')}><FontAwesomeIcon icon={faClose} size="lg" className='text-red' /></div><h1 className='text-slate-600 dark:text-slate-200 font-bold text-sm md:text-lg text-center' >Check out completed <span className='underline text-slate-400'><Link href="/dashboard">Access dashboard</Link></span></h1></div>,
+            'cancel': <div className='w-5/6 h-16 border-2 border-red-400 bg-red-400/25 rounded-lg flex justify-center items-center mx-auto relative'><div className='absolute top-1 left-2 hover:cursor-pointer text-red-400' onClick={() => router.push('/contact')}><FontAwesomeIcon icon={faClose} size="lg" className='text-red' /></div><h1 className='text-slate-600 dark:text-slate-200 font-bold text-sm md:text-lg text-center'>Check out canceled</h1></div>,
+
+          }[status]
+          : null}
                     <form action="./api/contact" method="post">
                         <input type='text' name="fullname" id="fullname" placeholder="Full Name" className='w-full bg-transparent border-black border-b-2 text-black focus:border-lightsalmon transition-colors duration-200 outline-none placeholder:text-neutral-500 my-3' required></input>
                         <input type='email' name="email" id="email" placeholder="Email" className='w-full bg-transparent border-black border-b-2 text-black focus:border-lightsalmon transition-colors duration-200 outline-none placeholder:text-neutral-500 my-3' required></input>
